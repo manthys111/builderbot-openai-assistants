@@ -1,35 +1,42 @@
 {
-  "name": "base-bailey-json",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/app.js",
-  "type": "module",
-  "scripts": {
-    "start": "node ./dist/app.js",
-    "lint": "eslint . --no-ignore",
-    "dev": "npm run lint && nodemon ./src/app.ts",
-    "build": "npx rollup -c"
-  },
+  "name": "@builderbot-plugins/openai-assistants",
+  "version": "0.0.2",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
-  "dependencies": {
-    "@builderbot-plugins/openai-assistants": "^0.0.2",
-    "@builderbot/bot": "1.1.4-alpha.2",
-    "@builderbot/provider-baileys": "1.1.4-alpha.2",
-    "dotenv": "^16.4.5"
+  "author": "Leifer Mendez <leifer33@gmail.com>",
+  "license": "ISC",
+  "main": "dist/index.cjs",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "./dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codigoencasa/bot-plugins.git"
   },
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf dist && rollup --config"
+  },
+  "bugs": {
+    "url": "https://github.com/codigoencasa/bot-plugins/issues"
+  },
+  "homepage": "https://github.com/codigoencasa/bot-plugins#readme",
   "devDependencies": {
-    "@types/multer": "^1.4.11",
-    "@types/node": "^20.11.30",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.4.0",
-    "eslint": "^8.52.0",
-    "eslint-plugin-builderbot": "latest",
-    "nodemon": "^3.1.0",
-    "rollup": "^4.10.0",
-    "rollup-plugin-typescript2": "^0.36.0",
-    "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@types/polka": "0.5.7",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-typescript2": "0.36.0",
+    "tsm": "2.3.0",
+    "typescript": "5.3.3"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@builderbot/bot": ">=1.1.*",
+    "multer": "1.4.5-lts.1",
+    "openai": "^4.38.3",
+    "polka": "0.5.2"
+  }
 }

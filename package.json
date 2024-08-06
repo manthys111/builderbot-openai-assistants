@@ -1,5 +1,5 @@
 {
-    "name": "base-bailey-json",
+    "name": "@builderbot/bot",
     "version": "1.2.1",
     "description": "core typescript",
     "author": "Leifer Mendez <leifer33@gmail.com>",

@@ -1,6 +1,6 @@
 {
   "name": "base-bailey-json",
-  "version": "1.2.1",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/app.js",
   "type": "module",
@@ -12,9 +12,9 @@
   },
   "keywords": [],
   "dependencies": {
-    "@builderbot-plugins/openai-assistants": "^1.1.2",
-    "@builderbot/bot": "1.1.2",
-    "@builderbot/provider-baileys": "1.1.2",
+    "@builderbot-plugins/openai-assistants": "^1.2.1",
+    "@builderbot/bot": "1.1.4-alpha.2",
+    "@builderbot/provider-baileys": "1.1.4-alpha.2",
     "dotenv": "^16.4.5"
   },
   "devDependencies": {
